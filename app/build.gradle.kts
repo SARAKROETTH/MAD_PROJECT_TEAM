@@ -7,6 +7,9 @@ plugins {
 android {
     namespace = "com.example.mad_project"
     compileSdk = 35
+    viewBinding{
+        enable = true
+    }
 
     defaultConfig {
         applicationId = "com.example.mad_project"
