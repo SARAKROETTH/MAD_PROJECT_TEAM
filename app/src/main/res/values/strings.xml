@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">MAD_PROJECT</string>
+    <string name="title_my_class">My Class</string>
+    <string name="title_Enrollment">Enrollment</string>
+    <string name="title_News">News</string>
+    <string name="title_Upload_a_student_card">Upload a Student Card</string>
+    <string name="title_My_Attendance">My Attendance</string>
+    <string name="title_my_score">My Score</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
