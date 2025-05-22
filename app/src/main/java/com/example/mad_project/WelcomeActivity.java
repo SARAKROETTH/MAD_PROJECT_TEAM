@@ -11,9 +11,10 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.mad_project.databinding.ActivityWelcomePageBinding;
 
+
 public class WelcomeActivity extends AppCompatActivity {
 
-    private ActivityWelcomePageBinding binding;
+   private ActivityWelcomePageBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
