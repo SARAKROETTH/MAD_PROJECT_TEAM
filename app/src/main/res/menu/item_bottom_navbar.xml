@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        android:iconTint="#7B1FA2"
+        />
+    <item
+        android:id="@+id/nav_add"
+        android:icon="@drawable/ic_add"
+        android:title="addStudentCard" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_menu_item"
+        android:title="menu" />
+</menu>

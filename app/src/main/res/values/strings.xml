@@ -8,4 +8,12 @@
     <string name="title_my_score">My Score</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+<!--    TODO: String FOR SignInActivity -->
+    <string name="title_sign_in">Sign In</string>
+    <string name="subtitle_sign_in">Welcome Back</string>
+    <string name="email_sign_in">Email</string>
+    <string name="password_sign_in">Password</string>
+    <string name="button_sign_in">Sign In</string>
+
 </resources>

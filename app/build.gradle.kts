@@ -2,16 +2,16 @@ import com.android.build.api.dsl.ViewBinding
 
 plugins {
     alias(libs.plugins.android.application)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
     namespace = "com.example.mad_project"
     compileSdk = 35
 
-    viewBinding{
-        enable = true
+    buildFeatures {
+        viewBinding = true
     }
-
 
     defaultConfig {
         applicationId = "com.example.mad_project"
@@ -39,11 +39,11 @@ android {
 }
 
 dependencies {
-
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation(libs.firebase.auth)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

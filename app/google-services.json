@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "325897497812",
+    "firebase_url": "https://maderollment-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "maderollment",
+    "storage_bucket": "maderollment.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325897497812:android:e9bcfde631fa9a3d315f41",
+        "android_client_info": {
+          "package_name": "com.example.mad_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlEGtP6wU-ACb1hLsHo6tOu65NlWFwqf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325897497812:android:d89489221f0baaa6315f41",
+        "android_client_info": {
+          "package_name": "com.example.ppy3_application"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlEGtP6wU-ACb1hLsHo6tOu65NlWFwqf4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
