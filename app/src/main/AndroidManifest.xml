@@ -16,6 +16,12 @@
             android:name=".setting"
             android:exported="false" />
         <activity
+            android:name=".StudentCard"
+            android:exported="false" />
+        <activity
+            android:name=".setting"
+            android:exported="false" />
+        <activity
             android:name=".Profile_page"
             android:exported="false" />
         <activity
