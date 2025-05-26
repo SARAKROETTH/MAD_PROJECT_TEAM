@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp"
+    android:elevation="20dp"
+    app:cardCornerRadius="10dp">
+    <LinearLayout
+        android:id="@+id/item_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/news"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="សេចក្តីជូនដំណឹង"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/showcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="គណៈគ្រប់គ្រងសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ សូមជម្រាបជូនដំណឹងដល់សាស្ត្រាចារ្យ និងនិស្សិតទាំងអស់ឱ្យបានជ្រាបថា សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញនឹងយកថ្នាក់រៀនធ្វើជាមណ្ឌលប្រឡងសម្រាប់ការប្រឡងថ្នាក់ជាតិចូលរៀនថ្នាក់ឆ្នាំសិក្សាមូលដ្ឋាន សម្រាប់កម្រិតបរិញ្ញាបត្រនៅតាមគ្រឹះស្ថានបណ្តុះបណ្តាលវិស័យសុខាភិបាល សម្រាប់ឆ្នាំសិក្សា២០២៤-២០២៥ ដែលនឹងប្រព្រឹត្តទៅចាប់ពីថ្ងៃទី១-២ ខែមីនា ឆ្នាំ២០២៥ នៅសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ។ ដូច្នេះសាស្ត្រាចារ្យ និងនិស្សិតទាំងអស់ត្រូវបានឈប់សម្រាកចាប់ពីវេនយប់ថ្ងៃសុក្រ ទី២៨ ខែកុម្ភៈ រហូតដល់ថ្ងៃអាទិត្យ ទី២ ខែមីនា ឆ្នាំ២០២៥។"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/showdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:text="04/01/2025"
+            android:textColor="#666666"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
