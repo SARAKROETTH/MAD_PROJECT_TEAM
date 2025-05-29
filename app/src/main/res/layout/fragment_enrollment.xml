@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
 
             android:layout_marginTop="50dp"
-            android:text="Enrolment"
+            android:text="@string/title_Enrollment"
             android:textColor="#fff"
             android:textSize="30sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -42,7 +42,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Start Term"
+                android:text="@string/title_start_term"
                 android:textColor="#000"
                 android:textSize="15dp"
                 android:textStyle="bold"
@@ -56,7 +56,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Term  payment"
+                android:text="@string/title_Term_payment"
                 android:textColor="#000"
                 android:textSize="15dp"
                 android:textStyle="bold"
@@ -80,13 +80,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
-                    android:text="Morning" />
+                    android:text="@string/title_morning" />
 
                 <RadioButton
                     android:id="@+id/radioButton4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Afternoon" />
+                    android:text="@string/title_afternoon" />
             </RadioGroup>
 
             <RadioGroup
@@ -105,7 +105,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
                     android:padding="3dp"
-                    android:text=" Full Term " />
+                    android:text="@string/title_Full_Term" />
 
 
                 <RadioButton
@@ -113,7 +113,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="3dp"
-                    android:text=" Only one Semester " />
+                    android:text="@string/title_Only_one_Semester" />
             </RadioGroup>
 
             <TextView
@@ -122,7 +122,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
 
-                android:text="Date and Time"
+                android:text="@string/title_Date_and_Time"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -140,7 +140,7 @@
                 android:inputType="date"
                 android:paddingHorizontal="10dp"
                 android:paddingVertical="18dp"
-                android:text="Enter the Date"
+                android:text="@string/title_Enter_the_Date"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView10" />
@@ -151,7 +151,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="316dp"
-                android:text="semster"
+                android:text="@string/title_semster"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -184,7 +184,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Class"
+                android:text="@string/title_Class"
                 android:textSize="15dp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -211,7 +211,7 @@
                 android:layout_marginTop="20dp"
                 android:background="@drawable/shap_sinner"
                 android:padding="20dp"
-                android:text="Make a Payment"
+                android:text="@string/title_Make_a_Payment"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/sp_class" />

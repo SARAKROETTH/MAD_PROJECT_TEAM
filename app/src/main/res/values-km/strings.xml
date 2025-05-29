@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">MAD_PROJECT</string>
+    <string name="title_my_class">My Class</string>
+    <string name="title_Enrollment">Enrollment</string>
+    <string name="title_News">News</string>
+    <string name="title_Upload_a_student_card">Upload a Student Card</string>
+    <string name="title_My_Attendance">My Attendance</string>
+    <string name="title_my_score">My Score</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: String FOR SignInActivity -->
+    <string name="title_sign_in">ចូល</string>
+    <string name="subtitle_sign_in">សូមស្វាគមន៍មកវិញ</string>
+    <string name="email_sign_in">អ៊ីមែល</string>
+    <string name="password_sign_in">ពាក្យសម្ងាត់</string>
+    <string name="button_sign_in">ចូល</string>
+
+    <!-- TODO : String For Setting Activity -->
+    <string name="name_Setting_Activity"> ឈ្មោះ :</string>
+    <string name="major_Setting_Activity"> មុខវិជ្ជា :</string>
+    <string name="sex_Setting_Activity"> ភេទ :</string>
+    <string name="date_of_birth_Setting_Activity"> ថ្ងៃខែឆ្នាំកំណើត :</string>
+    <string name="enrollment_Setting_Activity"> ការចុះឈ្មោះ :</string>
+    <string name="year_of_study_Setting_Activity"> ឆ្នាំសិក្សា :</string>
+    <string name="generation_Setting_Activity"> ជំនាន់ :</string>
+    <string name="email_Setting_Activity"> អ៊ីមែល </string>
+    <string name="phone_Setting_Activity"> លេខទូរស័ព្ទ :</string>
+    <string name="payment_Setting_Activity"> ការទូទាត់ :</string>
+    <string name="term_Setting_Activity"> ឆមាស </string>
+    <string name="paid_amount_Setting_Activity"> ចំនួនដែលបានបង់ :</string>
+    <string name="remark_Setting_Activity"> សេចក្តីសម្ដែង :</string>
+    <string name="button_paynow">បង់ឥឡូវនេះ</string>
+
+    <!-- TODO: String For Enrollment Activity -->
+    <string name="title_enrollment">ការចុះឈ្មោះ</string>
+    <string name="title_start_term">ចាប់ផ្តើមឆមាស</string>
+    <string name="title_morning">ពេលព្រឹក</string>
+    <string name="title_afternoon">ពេលរសៀល</string>
+    <string name="title_Term_payment">ការទូទាត់ឆមាស</string>
+    <string name="title_Full_Term">ការទូទាត់ឆមាស</string>
+    <string name="title_Only_one_Semester">តែឆមាសមួយប៉ុណ្ណោះ</string>
+    <string name="title_Date_and_Time">កាលបរិច្ឆេទ និងពេលវេលា</string>
+    <string name="title_Enter_the_Date">បញ្ចូលកាលបរិច្ឆេទ</string>
+    <string name="title_semster">ឆមាស</string>
+    <string name="title_Class">ថ្នាក់</string>
+    <string name="title_Make_a_Payment">ធ្វើការទូទាត់</string>
+
+    <!-- TODO: String For Profile Activity -->
+    <string name="title_name">ឈ្មោះ</string>
+    <string name="title_Profile">ប្រវត្តិរូប</string>
+    <string name="title_Setting">ការកំណត់</string>
+    <string name="title_Language">ភាសា</string>
+    <string name="title_Logout">ចាកចេញ</string>
+
+    <!-- TODO: String For Upload ID Card -->
+    <string name="title_upload_a_students_card">ផ្ទុកឡើងប័ណ្ណសិស្ស</string>
+    <string name="title_Upload_ID_Card">ផ្ទុកឡើងអត្តសញ្ញាណប័ណ្ណ</string>
+    <string name="title_Browse">រុករក</string>
+
+</resources>

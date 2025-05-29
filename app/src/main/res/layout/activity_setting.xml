@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:gravity="center"
-            android:text="Name"
+            android:text="@string/title_name"
             android:textColor="@color/white"
             android:textStyle="bold"
             android:textSize="30sp"/>
@@ -69,7 +69,7 @@
             android:id="@+id/Major"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name:"
+            android:text="@string/major_Setting_Activity"
             android:textSize="20dp"
             android:textColor="@color/white"
             />
@@ -95,7 +95,7 @@
             android:id="@+id/Sex"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sex:"
+            android:text="@string/sex_Setting_Activity"
             android:textSize="20dp"
             android:textColor="@color/white"
             />
@@ -103,7 +103,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Female"
+            android:text="Femal"
             android:textSize="20dp"
             android:textColor="@color/white"
             />
@@ -121,7 +121,7 @@
             android:id="@+id/DOB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Date Of Birth:"
+            android:text="@string/date_of_birth_Setting_Activity"
             android:textSize="20dp"
             android:textColor="@color/white"
             />
@@ -148,7 +148,7 @@
             android:id="@+id/Enroll"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Enrollment:"
+            android:text="@string/title_Enrollment"
             android:textColor="@color/white"
             android:textSize="20dp" />
 
@@ -210,7 +210,7 @@
             android:id="@+id/YOS"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Year of Study:"
+            android:text="@string/year_of_study_Setting_Activity"
             android:textSize="20dp"
             android:textColor="@color/white"
             />
@@ -236,7 +236,7 @@
             android:id="@+id/Generation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Generation:"
+            android:text="@string/generation_Setting_Activity"
             android:textSize="20dp"
             android:textColor="@color/white"
             />
@@ -262,7 +262,7 @@
             android:id="@+id/Email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Email:"
+            android:text="@string/email_Setting_Activity"
             android:textSize="20dp"
             android:textColor="@color/white"
             />
@@ -287,7 +287,7 @@
         android:id="@+id/PayList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Payment List"
+        android:text="@string/payment_Setting_Activity"
         android:textColor="@color/white"
         android:textSize="30dp"
         />
