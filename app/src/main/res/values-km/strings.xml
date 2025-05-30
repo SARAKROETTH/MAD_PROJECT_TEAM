@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MAD_PROJECT</string>
     <string name="title_my_class">My Class</string>
@@ -17,13 +18,13 @@
     <string name="button_sign_in">Sign In</string>
 
     <!--    TODO : String For Setting Activity -->
-    <string name="name_Setting_Activity"> Name :</string>
-    <string name="major_Setting_Activity"> Major :</string>
-    <string name="sex_Setting_Activity"> Sex :</string>
-    <string name="date_of_birth_Setting_Activity"> Date Of Birth :</string>
-    <string name="enrollment_Setting_Activity"> Enrollment :</string>
-    <string name="year_of_study_Setting_Activity"> Year Of Study :</string>
-    <string name="generation_Setting_Activity"> Generation :</string>
-    <string name="email_Setting_Activity"> Email </string>
-    <string name="phone_Setting_Activity"> Phone :</string>
+    <string name="major_Setting_Activity"> មុខជំនាញ </string>
+    <string name="name_Setting_Activity"> ឈ្មោះ :</string>
+    <string name="sex_Setting_Activity"> ភេទ :</string>
+    <string name="date_of_birth_Setting_Activity"> ថ្ងៃ ខែ ឆ្នាំ កំណើត :</string>
+    <string name="enrollment_Setting_Activity"> ការបង់លុយ : </string>
+    <string name="phone_Setting_Activity"> លេខទូរស័ព្ទ : </string>
+    <string name="year_of_study_Setting_Activity"> ឆ្នាំសិក្សា </string>
+    <string name="generation_Setting_Activity"> ជំនាន់</string>
+    <string name="email_Setting_Activity"> អ៊ីម៉ែល </string>
 </resources>
