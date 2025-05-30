@@ -44,8 +44,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
-            android:text="Upload ID Card"
             android:textStyle="bold"
+            android:text="@string/title_Upload_ID_Card"
             android:textColor="@android:color/black"
             android:textSize="18sp" />
 
