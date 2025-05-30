@@ -1,907 +1,311 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@color/primary"
     android:gravity="center_horizontal"
-    android:background="#0023FF"
+    android:orientation="vertical"
     tools:context=".setting">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="start"
-        android:orientation="horizontal"
-        android:padding="16dp">
-
-        <ImageView
-            android:id="@+id/backArrow"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:contentDescription="Back Arrow"
-            android:src="@drawable/baseline_keyboard_arrow_left_24" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="11dp"
-            android:text="My Profile"
-            android:textColor="@color/white"
-            android:textSize="20dp" />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:layout_marginTop="20dp">
-
-        <ImageView
-            android:id="@+id/profile"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/profile_icon"
-            android:contentDescription="Profile Image" />
-
-        <TextView
-            android:id="@+id/editTextName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:gravity="center"
-            android:text="Name"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="30sp"/>
-    </LinearLayout>
-    <LinearLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="start"
-        android:padding="10dp"
-        >
-        <TextView
-            android:id="@+id/Major"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Name:"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="ITE"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            />
-
-    </LinearLayout>
-    <LinearLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="start"
-        android:padding="10dp"
-        >
-        <TextView
-            android:id="@+id/Sex"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sex:"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Female"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            />
-
-    </LinearLayout>
-    <LinearLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="start"
-        android:padding="10dp"
-        >
-        <TextView
-            android:id="@+id/DOB"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Date Of Birth:"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text=" 12/11/2004"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            />
-
-    </LinearLayout>
-
-    <LinearLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="start"
-        android:orientation="horizontal"
-        android:padding="10dp">
-
-        <TextView
-            android:id="@+id/Enroll"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Enrollment:"
-            android:textColor="@color/white"
-            android:textSize="20dp" />
-
-        <TextView
-            android:layout_width="202dp"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text=" 600$/Year"
-            android:textColor="@color/white"
-            android:textSize="20dp" />
-
-        <TextView
-            android:layout_width="123dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/green_dot"
-            android:gravity="center"
-            android:padding="16dp"
-            android:text="Done"
-            android:textColor="@color/white"
-            android:textSize="15dp"
-            android:textStyle="bold" />
-
-    </LinearLayout>
-    <LinearLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="start"
-        android:padding="10dp"
-        >
-        <TextView
-            android:id="@+id/No"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="NO.:"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text=" 088 788 6959 "
-            android:textColor="@color/white"
-            android:textSize="20dp" />
-
-    </LinearLayout>
-    <LinearLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="start"
-        android:padding="10dp"
-        >
-        <TextView
-            android:id="@+id/YOS"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Year of Study:"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Year 2 Student"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            />
-
-    </LinearLayout>
-    <LinearLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="start"
-        android:padding="10dp"
-        >
-        <TextView
-            android:id="@+id/Generation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Generation:"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="09"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            />
-
-    </LinearLayout>
-    <LinearLayout
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="start"
-        android:padding="10dp"
-        >
-        <TextView
-            android:id="@+id/Email"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Email:"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="phearom.ratha.2822@rupp.edu.kh"
-            android:textSize="20dp"
-            android:textColor="@color/white"
-            />
-
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="start"
-        android:padding="10dp">
-
-    <TextView
-        android:id="@+id/PayList"
+        android:id="@+id/container_profile"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Payment List"
-        android:textColor="@color/white"
-        android:textSize="30dp"
-        />
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-    </LinearLayout>
-
-    <!-- Card-style container -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="86dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/done_button"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="16dp">
-
-        <!-- Left: Semester Text -->
-        <TextView
-            android:id="@+id/Sem1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:gravity="start|center_vertical"
-            android:text="Semester1"
-            android:textColor="#000000"
-            android:textSize="20sp" />
-        <TextView
-            android:id="@+id/Y1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="start|center_vertical"
-            android:text="Year1"
-            android:textColor="#000000"
-            android:textSize="20sp" />
-
-        <!-- Right: Status + Button Column -->
         <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Profile"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="end|center_vertical"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <!-- Green Dot + Label -->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/rec_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/aba_icon"
 
-                <View
-                    android:layout_width="12dp"
-                    android:layout_height="12dp"
-                    android:layout_marginEnd="6dp"
-                    android:background="@drawable/green_dot" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:text="activitive"
-                    android:textColor="#000000"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <!-- More Detail Button -->
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:backgroundTint="#1A1A40"
-                android:paddingLeft="12dp"
-                android:paddingTop="2dp"
-                android:paddingRight="12dp"
-                android:paddingBottom="4dp"
-                android:text="more detail"
-                android:textColor="#FFFFFF"
-                android:textSize="10sp" />
+                />
         </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="86dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/done_button"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="16dp">
 
-        <!-- Left: Semester Text -->
-        <TextView
-            android:id="@+id/Sem2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:gravity="start|center_vertical"
-            android:text="Semester2"
-            android:textColor="#000000"
-            android:textSize="20sp" />
-        <TextView
-            android:id="@+id/Year1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="start|center_vertical"
-            android:text="Year1"
-            android:textColor="#000000"
-            android:textSize="20sp" />
-
-        <!-- Right: Status + Button Column -->
         <LinearLayout
-            android:layout_width="wrap_content"
+
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="end|center_vertical"
-            android:orientation="vertical">
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:padding="10dp">
 
-            <!-- Green Dot + Label -->
-            <LinearLayout
+            <TextView
+                android:id="@+id/Major"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:text="@string/name_Setting_Activity"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
 
-                <View
-                    android:layout_width="12dp"
-                    android:layout_height="12dp"
-                    android:layout_marginEnd="6dp"
-                    android:background="@drawable/green_dot" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:text="activitive"
-                    android:textColor="#000000"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <!-- More Detail Button -->
-            <Button
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/show_name"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:backgroundTint="#1A1A40"
-                android:paddingLeft="12dp"
-                android:paddingTop="2dp"
-                android:paddingRight="12dp"
-                android:paddingBottom="4dp"
-                android:text="more detail"
-                android:textColor="#FFFFFF"
-                android:textSize="10sp" />
+                android:gravity="center"
+                android:text="ITE"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
         </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="86dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/done_button"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="16dp">
 
-        <!-- Left: Semester Text -->
-        <TextView
-            android:id="@+id/Y2Sem1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:gravity="start|center_vertical"
-            android:text="Semester1"
-            android:textColor="#000000"
-            android:textSize="20sp" />
-        <TextView
-            android:id="@+id/S1Y2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="start|center_vertical"
-            android:text="Year2"
-            android:textColor="#000000"
-            android:textSize="20sp" />
-
-        <!-- Right: Status + Button Column -->
         <LinearLayout
-            android:layout_width="wrap_content"
+
+            android:id="@+id/linearLayout5"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="end|center_vertical"
-            android:orientation="vertical">
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:padding="10dp">
 
-            <!-- Green Dot + Label -->
-            <LinearLayout
+            <TextView
+                android:id="@+id/Sex"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:text="Sex:"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
 
-                <View
-                    android:layout_width="12dp"
-                    android:layout_height="12dp"
-                    android:layout_marginEnd="6dp"
-                    android:background="@drawable/green_dot" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:text="activitive"
-                    android:textColor="#000000"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <!-- More Detail Button -->
-            <Button
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/show_sex"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:backgroundTint="#1A1A40"
-                android:paddingLeft="12dp"
-                android:paddingTop="2dp"
-                android:paddingRight="12dp"
-                android:paddingBottom="4dp"
-                android:text="more detail"
-                android:textColor="#FFFFFF"
-                android:textSize="10sp" />
+                android:gravity="center"
+                android:text="Female"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
         </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="86dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/done_button"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="16dp">
 
-        <!-- Left: Semester Text -->
-        <TextView
-            android:id="@+id/Y2Sem2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:gravity="start|center_vertical"
-            android:text="Semester2"
-            android:textColor="#000000"
-            android:textSize="20sp" />
-        <TextView
-            android:id="@+id/S2Y2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="start|center_vertical"
-            android:text="Year2"
-            android:textColor="#000000"
-            android:textSize="20sp" />
-
-        <!-- Right: Status + Button Column -->
         <LinearLayout
-            android:layout_width="wrap_content"
+
+            android:id="@+id/linearLayout6"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="end|center_vertical"
-            android:orientation="vertical">
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:padding="10dp">
 
-            <!-- Green Dot + Label -->
-            <LinearLayout
+            <TextView
+                android:id="@+id/DOB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:text="Date Of Birth:"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
 
-                <View
-                    android:layout_width="12dp"
-                    android:layout_height="12dp"
-                    android:layout_marginEnd="6dp"
-                    android:background="@drawable/green_dot" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:text="activitive"
-                    android:textColor="#000000"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <!-- More Detail Button -->
-            <Button
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/show_date"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:backgroundTint="#1A1A40"
-                android:paddingLeft="12dp"
-                android:paddingTop="2dp"
-                android:paddingRight="12dp"
-                android:paddingBottom="4dp"
-                android:text="more detail"
-                android:textColor="#FFFFFF"
-                android:textSize="10sp" />
+                android:gravity="center"
+                android:text=" 12/11/2004"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
         </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="86dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/done_button"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="16dp">
 
-        <!-- Left: Semester Text -->
-        <TextView
-            android:id="@+id/Y3Sem1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:gravity="start|center_vertical"
-            android:text="Semester1"
-            android:textColor="#000000"
-            android:textSize="20sp" />
-        <TextView
-            android:id="@+id/S1Y3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="start|center_vertical"
-            android:text="Year3"
-            android:textColor="#000000"
-            android:textSize="20sp" />
-
-        <!-- Right: Status + Button Column -->
         <LinearLayout
-            android:layout_width="wrap_content"
+
+            android:id="@+id/linearLayout7"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="end|center_vertical"
-            android:orientation="vertical">
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp">
 
-            <!-- Green Dot + Label -->
-            <LinearLayout
+            <TextView
+                android:id="@+id/Enroll"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:text="Enrollment:"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
 
-                <View
-                    android:layout_width="12dp"
-                    android:layout_height="12dp"
-                    android:layout_marginEnd="6dp"
-                    android:background="@drawable/green_dot" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:text="activitive"
-                    android:textColor="#000000"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <!-- More Detail Button -->
-            <Button
+            <TextView
+                android:id="@+id/show_enroll"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:backgroundTint="#1A1A40"
-                android:paddingLeft="12dp"
-                android:paddingTop="2dp"
-                android:paddingRight="12dp"
-                android:paddingBottom="4dp"
-                android:text="more detail"
-                android:textColor="#FFFFFF"
-                android:textSize="10sp" />
+                android:layout_marginStart="20dp"
+                android:background="@drawable/green_dot"
+                android:gravity="center"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="5dp"
+                android:text="Done"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
         </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="86dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/done_button"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="16dp">
 
-        <!-- Left: Semester Text -->
-        <TextView
-            android:id="@+id/Y3Sem2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:gravity="start|center_vertical"
-            android:text="Semester2"
-            android:textColor="#000000"
-            android:textSize="20sp" />
-        <TextView
-            android:id="@+id/S2Y3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="start|center_vertical"
-            android:text="Year3"
-            android:textColor="#000000"
-            android:textSize="20sp" />
-
-        <!-- Right: Status + Button Column -->
         <LinearLayout
-            android:layout_width="wrap_content"
+
+            android:id="@+id/linearLayout8"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="end|center_vertical"
-            android:orientation="vertical">
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:padding="10dp">
 
-            <!-- Green Dot + Label -->
-            <LinearLayout
+            <TextView
+                android:id="@+id/No"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:text="NO.:"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
 
-                <View
-                    android:layout_width="12dp"
-                    android:layout_height="12dp"
-                    android:layout_marginEnd="6dp"
-                    android:background="@drawable/green_dot" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:text="activitive"
-                    android:textColor="#000000"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <!-- More Detail Button -->
-            <Button
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/show_phone_number"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:backgroundTint="#1A1A40"
-                android:paddingLeft="12dp"
-                android:paddingTop="2dp"
-                android:paddingRight="12dp"
-                android:paddingBottom="4dp"
-                android:text="more detail"
-                android:textColor="#FFFFFF"
-                android:textSize="10sp" />
+                android:gravity="center"
+                android:text=" 088 788 6959 "
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
         </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="86dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/done_button"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="16dp">
 
-        <!-- Left: Semester Text -->
-        <TextView
-            android:id="@+id/Y4Sem1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:gravity="start|center_vertical"
-            android:text="Semester1"
-            android:textColor="#000000"
-            android:textSize="20sp" />
-        <TextView
-            android:id="@+id/S1Y4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="start|center_vertical"
-            android:text="Year4"
-            android:textColor="#000000"
-            android:textSize="20sp" />
-
-        <!-- Right: Status + Button Column -->
         <LinearLayout
-            android:layout_width="wrap_content"
+
+            android:id="@+id/linearLayout9"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="end|center_vertical"
-            android:orientation="vertical">
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:padding="10dp">
 
-            <!-- Green Dot + Label -->
-            <LinearLayout
+            <TextView
+                android:id="@+id/YOS"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:text="Year of Study:"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
 
-                <View
-                    android:layout_width="12dp"
-                    android:layout_height="12dp"
-                    android:layout_marginEnd="6dp"
-                    android:background="@drawable/green_dot" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:text="activitive"
-                    android:textColor="#000000"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <!-- More Detail Button -->
-            <Button
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/show_year"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:backgroundTint="#1A1A40"
-                android:paddingLeft="12dp"
-                android:paddingTop="2dp"
-                android:paddingRight="12dp"
-                android:paddingBottom="4dp"
-                android:text="more detail"
-                android:textColor="#FFFFFF"
-                android:textSize="10sp" />
+                android:gravity="center"
+                android:text="Year 2 Student"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
         </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="86dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/done_button"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:padding="16dp">
 
-        <!-- Left: Semester Text -->
-        <TextView
-            android:id="@+id/Y4Sem2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.5"
-            android:gravity="start|center_vertical"
-            android:text="Semester2"
-            android:textColor="#000000"
-            android:textSize="20sp" />
-        <TextView
-            android:id="@+id/S2Y4"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="start|center_vertical"
-            android:text="Year4"
-            android:textColor="#000000"
-            android:textSize="20sp" />
-
-        <!-- Right: Status + Button Column -->
         <LinearLayout
-            android:layout_width="wrap_content"
+
+            android:id="@+id/linearLayout10"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="end|center_vertical"
-            android:orientation="vertical">
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:padding="10dp">
 
-            <!-- Green Dot + Label -->
-            <LinearLayout
+            <TextView
+                android:id="@+id/Generation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
+                android:text="Generation:"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
 
-                <View
-                    android:layout_width="12dp"
-                    android:layout_height="12dp"
-                    android:layout_marginEnd="6dp"
-                    android:background="@drawable/green_dot" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:text="activitive"
-                    android:textColor="#000000"
-                    android:textSize="12sp" />
-            </LinearLayout>
-
-            <!-- More Detail Button -->
-            <Button
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/show_generation"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="1dp"
-                android:backgroundTint="#1A1A40"
-                android:paddingLeft="12dp"
-                android:paddingTop="2dp"
-                android:paddingRight="12dp"
-                android:paddingBottom="4dp"
-                android:text="more detail"
-                android:textColor="#FFFFFF"
-                android:textSize="10sp" />
+                android:gravity="center"
+                android:text="09"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
         </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/linearLayout11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="start"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/show_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_horizontal"
+                android:text="phearom.ratha.2822@rupp.edu.kh"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
-</LinearLayout>
+
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,6 +12,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.example.mad_project.databinding.ActivitySignInPageBinding;
+import com.example.mad_project.repositories.AuthRepository;
+import com.example.mad_project.repositories.IApiCallback;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -24,8 +26,14 @@ public class SignInPageActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
 
+    private AuthRepository authRepository;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        authRepository = new AuthRepository(this);
+
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         binding = ActivitySignInPageBinding.inflate(getLayoutInflater());
@@ -50,14 +58,16 @@ public class SignInPageActivity extends AppCompatActivity {
         String email = binding.inputemail.getText().toString();
         String password = binding.inputpassword.getText().toString();
 
-        mAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+        this.authRepository = new AuthRepository(this);
+        this.authRepository.signIn(email, password, new IApiCallback<FirebaseUser>() {
             @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if (task.isSuccessful()){
-                    reload();
-                }else {
-                    Toast.makeText(SignInPageActivity.this, "Authentication failed.", Toast.LENGTH_SHORT).show();
-                }
+            public void onSuccess(FirebaseUser result) {
+                reload();
+            }
+
+            @Override
+            public void onError(String errorMessage) {
+                Toast.makeText(SignInPageActivity.this, errorMessage, Toast.LENGTH_SHORT).show();
             }
         });
 

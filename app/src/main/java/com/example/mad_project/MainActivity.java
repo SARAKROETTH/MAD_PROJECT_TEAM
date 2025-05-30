@@ -1,12 +1,17 @@
 package com.example.mad_project;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
@@ -18,6 +23,8 @@ import com.example.mad_project.fragment.HomeFragment;
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
+
+    private static final int REQUEST_CODE_NOTIFICATION = 101;
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -36,6 +43,11 @@ public class MainActivity extends AppCompatActivity {
         return false;
     }
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        checkAndRequestNotificationPermission();
+    }
 
 
     @Override
@@ -50,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+//        call notification
 
 
         binding.bottomNavigation.setOnItemSelectedListener(menuItem -> {
@@ -73,5 +86,13 @@ public class MainActivity extends AppCompatActivity {
                 .beginTransaction()
                 .replace(R.id.container_fragment, fragment)
                 .commit();
+    }
+
+    private void checkAndRequestNotificationPermission() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {  // Android 13+
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.POST_NOTIFICATIONS}, REQUEST_CODE_NOTIFICATION);
+            }
+        }
     }
 }
