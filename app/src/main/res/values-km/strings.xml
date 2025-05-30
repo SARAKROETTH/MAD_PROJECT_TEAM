@@ -27,4 +27,9 @@
     <string name="year_of_study_Setting_Activity"> ឆ្នាំសិក្សា </string>
     <string name="generation_Setting_Activity"> ជំនាន់</string>
     <string name="email_Setting_Activity"> អ៊ីម៉ែល </string>
+    <string name="payment_Setting_Activity"> ការទូទាត់ :</string>
+    <string name="term_Setting_Activity"> ឆមាស </string>
+    <string name="paid_amount_Setting_Activity"> ចំនួនទឹកប្រាក់ :</string>
+    <string name="remark_Setting_Activity"> ចំណាំ :</string>
+    <string name="button_paynow"> បង់ប្រាក់ </string>
 </resources>

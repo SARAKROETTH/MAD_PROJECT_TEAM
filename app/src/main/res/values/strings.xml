@@ -26,4 +26,10 @@
     <string name="generation_Setting_Activity"> Generation :</string>
     <string name="email_Setting_Activity"> Email </string>
     <string name="phone_Setting_Activity"> Phone :</string>
+    <string name="payment_Setting_Activity"> payment :</string>
+    <string name="term_Setting_Activity"> Term </string>
+    <string name="paid_amount_Setting_Activity"> Paid Amount :</string>
+    <string name="remark_Setting_Activity"> Remark :</string>
+    <string name="button_paynow">pay now</string>
+
 </resources>

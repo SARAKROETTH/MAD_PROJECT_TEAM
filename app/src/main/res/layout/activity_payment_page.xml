@@ -58,36 +58,37 @@
             android:orientation="vertical"
             android:layout_marginEnd="20dp"
             >
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="No"
+                android:paddingVertical="5dp"
+                android:text="@string/phone_Setting_Activity"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingVertical="5dp"
+                android:textSize="15sp"
+                android:text="@string/name_Setting_Activity"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sex_Setting_Activity"
                 android:paddingVertical="5dp"
                 android:textSize="15sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingVertical="5dp"
                 android:textSize="15sp"
-                android:text="Name Students"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="sex"
-                android:paddingVertical="5dp"
-                android:textSize="15sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15sp"
-                android:text="Payment Date"
+                android:text="@string/payment_Setting_Activity"
                 android:paddingVertical="5dp"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
-                android:text="Term "
+                android:text="@string/term_Setting_Activity"
                 android:paddingVertical="5dp"
                 />
             <TextView
@@ -95,14 +96,14 @@
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
                 android:paddingVertical="5dp"
-                android:text="Paid Amount "
+                android:text="@string/paid_amount_Setting_Activity"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="15sp"
                 android:paddingVertical="5dp"
-                android:text="Remark"
+                android:text="@string/remark_Setting_Activity"
                 />
 
         </LinearLayout>
@@ -202,7 +203,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Pay Now" />
+            android:text="@string/button_paynow" />
 
 
     </LinearLayout>
