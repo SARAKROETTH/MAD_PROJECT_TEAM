@@ -22,6 +22,7 @@
         <activity
             android:name=".SignInPageActivity"
             android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="false" />
@@ -29,17 +30,25 @@
             android:name=".information"
             android:exported="false" />
         <activity
-            android:name=".StudentCard"
+            android:name=".setting"
             android:exported="false" />
         <activity
-            android:name=".setting"
+            android:name=".StudentCard"
             android:exported="false" />
         <activity
             android:name=".Profile_page"
             android:exported="false" />
+
         <activity
             android:name=".PaymentPage"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".WelcomeActivity"
             android:exported="true">
