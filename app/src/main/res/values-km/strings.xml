@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MAD_PROJECT</string>
     <string name="title_my_class">My Class</string>
@@ -16,9 +17,6 @@
     <string name="password_sign_in">Password</string>
     <string name="button_sign_in">Sign In</string>
 
-<!--    TODO : String For Setting Activity -->
-    <string name="name_Setting_Activity"> Name:</string>
-
-
-
+    <!--    TODO : String For Setting Activity -->
+    <string name="name_Setting_Activity"> ឈ្មោះ :</string>
 </resources>

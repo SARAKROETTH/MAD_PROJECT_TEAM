@@ -3,6 +3,7 @@ package com.example.mad_project;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 
@@ -60,10 +61,9 @@ public class Profile_page extends AppCompatActivity {
         });
 
         binding.groupLogout.setOnClickListener(view -> {
-            mAuth.signOut();
-            Intent welcomeintent = new Intent(this, WelcomeActivity.class);
-            startActivity(welcomeintent);
-            finish();
+
+            ClearUserData(mAuth.getCurrentUser().getUid());
+
         });
 
         binding.groupProfile.setOnClickListener(view -> {
@@ -73,6 +73,26 @@ public class Profile_page extends AppCompatActivity {
         });
 
         LoadUserData();
+
+    }
+
+    private void ClearUserData(String nameId) {
+        userRepository.deleteStudentById(nameId, new IApiCallback<Void>() {
+            @Override
+            public void onSuccess(Void result) {
+                if(result == null){
+                    mAuth.signOut();
+                    Intent welcomeintent = new Intent(Profile_page.this, WelcomeActivity.class);
+                    startActivity(welcomeintent);
+                    finish();
+                }
+            }
+
+            @Override
+            public void onError(String errorMessage) {
+                Toast.makeText( Profile_page.this, errorMessage, Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 

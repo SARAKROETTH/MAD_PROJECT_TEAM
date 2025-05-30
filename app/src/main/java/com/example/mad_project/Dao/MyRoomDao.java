@@ -22,7 +22,7 @@ public interface MyRoomDao {
     void insertCategories(Student student);
 
     @Query("DELETE FROM studentData")
-    void deleteAllCategories();
+    void deleteAllStident();
 
     @Query("DELETE FROM studentData WHERE id = :id")
     void deleteCategoryById(String id);

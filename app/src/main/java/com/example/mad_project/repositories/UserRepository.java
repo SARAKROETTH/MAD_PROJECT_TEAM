@@ -54,6 +54,12 @@ public class UserRepository {
             }
         });
     }
+    public void deleteStudentById(String id, IApiCallback<Void> callback){
+        Executors.newSingleThreadExecutor().execute(() -> {
+            myRoomDao.deleteCategoryById(id);
+            callback.onSuccess(null);
+        });
+    }
 
 
     public void getStudentByid(String id,IApiCallback<Student> callback){
@@ -73,7 +79,6 @@ public class UserRepository {
             myRoomDao.insertCategories(student);
         });
     }
-
 
 
 }
