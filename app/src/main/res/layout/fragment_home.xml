@@ -138,6 +138,7 @@
                     >
 
                     <LinearLayout
+                        android:id="@+id/show_enrolment"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/shap_card"
@@ -228,7 +229,27 @@
                     app:cardBackgroundColor="@color/bg_card"
                     >
 
+
+
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_myAttendence"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="5dp"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardBackgroundColor="@color/bg_card"
+                    >
                     <LinearLayout
+                        android:id="@+id/cardstudent_add"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/shap_card"
@@ -257,47 +278,6 @@
 
 
 
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/card_myAttendence"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_row="1"
-                    android:layout_column="1"
-                    android:layout_columnWeight="1"
-                    android:layout_margin="5dp"
-                    android:elevation="4dp"
-                    app:cardCornerRadius="20dp"
-                    app:cardBackgroundColor="@color/bg_card"
-                    >
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/shap_card"
-                        android:orientation="vertical"
-                        android:padding="10dp">
-
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:layout_gravity="center"
-                            android:src="@mipmap/ic_my_attendent" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:background="@drawable/shape_text"
-                            android:paddingHorizontal="8dp"
-                            android:paddingVertical="5dp"
-                            android:text="@string/title_My_Attendance"
-                            android:textColor="@color/text_color_primary"
-                            android:textSize="8dp" />
-                    </LinearLayout>
-
-
 
 
                 </androidx.cardview.widget.CardView>
@@ -314,34 +294,6 @@
                     app:cardCornerRadius="20dp"
                     app:cardBackgroundColor="@color/bg_card"
                     >
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/shap_card"
-                        android:orientation="vertical"
-                        android:padding="10dp">
-
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:layout_gravity="center"
-                            android:src="@mipmap/ic_my_score" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:background="@drawable/shape_text"
-                            android:paddingHorizontal="8dp"
-                            android:paddingVertical="5dp"
-                            android:text="@string/title_my_score"
-                            android:textColor="@color/text_color_primary"
-                            android:textSize="8dp" />
-                    </LinearLayout>
-
-
-
 
                 </androidx.cardview.widget.CardView>
                 <!-- row 1  -->

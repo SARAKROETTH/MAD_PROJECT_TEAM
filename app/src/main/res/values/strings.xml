@@ -32,7 +32,7 @@
     <string name="remark_Setting_Activity"> Remark :</string>
     <string name="button_paynow">pay now</string>
 
-<!--    TODO: String For Enrollment Activity -->
+    <!--    TODO: String For Enrollment Activity -->
     <string name="title_enrollment">Enrollment</string>
     <string name="title_start_term">Start Term</string>
     <string name="title_morning">Morning</string>
@@ -46,7 +46,7 @@
     <string name="title_Class">Class</string>
     <string name="title_Make_a_Payment">Make a Payment</string>
 
-<!--    TODO: String For Profile Activity -->
+    <!--    TODO: String For Profile Activity -->
 
     <string name="title_name">Name</string>
     <string name="title_Profile">Profile</string>
@@ -54,7 +54,7 @@
     <string name="title_Language">Language</string>
     <string name="title_Logout">Logout</string>
 
-<!--    TODO: String For Upload ID Card -->
+    <!--    TODO: String For Upload ID Card -->
     <string name="title_upload_a_students_card">Upload a students card</string>
     <string name="title_Upload_ID_Card">Upload ID Card</string>
     <string name="title_Browse">Browse</string>

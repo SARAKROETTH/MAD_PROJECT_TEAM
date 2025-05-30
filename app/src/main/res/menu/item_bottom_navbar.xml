@@ -10,7 +10,7 @@
         android:icon="@drawable/ic_add"
         android:title="addStudentCard" />
     <item
-        android:id="@+id/nav_profile"
+        android:id="@+id/nav_history"
         android:icon="@drawable/ic_menu_item"
-        android:title="menu" />
+        android:title="History" />
 </menu>

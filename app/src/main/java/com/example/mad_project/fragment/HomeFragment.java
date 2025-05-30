@@ -19,6 +19,10 @@ public class HomeFragment extends Fragment {
 
     private InformationFragment informationFragment = new InformationFragment();
 
+    private EnrollmentFragment enrollmentFragment = new EnrollmentFragment();
+
+    private StudentCardFragment studentCardFragment = new StudentCardFragment();
+
 
     public HomeFragment() {
         // Required empty public constructor
@@ -33,6 +37,12 @@ public class HomeFragment extends Fragment {
         binding.showNews.setOnClickListener(v -> {
             LoadFragment(informationFragment);
 
+        });
+        binding.showEnrolment.setOnClickListener(v -> {
+            LoadFragment(enrollmentFragment);
+        });
+        binding.cardstudentAdd.setOnClickListener(v -> {
+            LoadFragment(studentCardFragment);
         });
         return binding.getRoot();
     }

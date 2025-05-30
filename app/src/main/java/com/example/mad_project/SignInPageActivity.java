@@ -28,7 +28,6 @@ public class SignInPageActivity extends AppCompatActivity {
 
     private AuthRepository authRepository;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 

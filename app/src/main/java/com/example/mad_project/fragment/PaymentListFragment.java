@@ -3,30 +3,27 @@ package com.example.mad_project.fragment;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.example.mad_project.R;
-import com.example.mad_project.databinding.FragmentEnrollmentBinding;
 
-public class EnrollmentFragment extends Fragment {
+public class PaymentListFragment extends Fragment {
 
-    private FragmentEnrollmentBinding binding;
 
+
+    public PaymentListFragment() {
+        // Required empty public constructor
+    }
 
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        binding = FragmentEnrollmentBinding.inflate(inflater, container, false);
-        return inflater.inflate(R.layout.fragment_enrollment, container, false);
+
+
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_payment_list, container, false);
     }
-
-
-
-
-
 }

@@ -19,6 +19,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.mad_project.databinding.ActivityMainBinding;
 import com.example.mad_project.fragment.HomeFragment;
+import com.example.mad_project.fragment.StudentCardFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -69,6 +70,8 @@ public class MainActivity extends AppCompatActivity {
             int itemID = menuItem.getItemId();
             if(itemID == R.id.nav_home){
                 LoadFragment(new HomeFragment());
+            }else if(itemID == R.id.nav_add){
+                LoadFragment(new StudentCardFragment());
             }
             return true;
         });
