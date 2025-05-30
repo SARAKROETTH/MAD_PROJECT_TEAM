@@ -14,11 +14,21 @@ import androidx.core.app.NotificationCompat;
 
 
 import com.example.mad_project.R;
+import com.example.mad_project.models.InformationRupp;
+import com.example.mad_project.repositories.NotificationRepository;
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
+
+
+
+    private InformationRupp informationRupp;
     private final String CHANNEL_ID = "information_notify_channel";
 
     @Override
@@ -40,9 +50,18 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
     @Override
     public void onMessageReceived(@NonNull RemoteMessage message) {
         if(message.getNotification() != null){
+
+            String time = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
+                    .format(new Date());
+            NotificationRepository notificationRepository = new NotificationRepository(getApplicationContext());
+            informationRupp = new InformationRupp(message.getNotification().getBody(),message.getNotification().getTitle(),time);
+            notificationRepository.saveNotificationToLocal(informationRupp);
             sendNotification(message.getNotification().getTitle(), message.getNotification().getBody());
         }
     }
+
+
+
 
 
 

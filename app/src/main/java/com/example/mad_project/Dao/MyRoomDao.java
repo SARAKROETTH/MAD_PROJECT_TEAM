@@ -5,6 +5,7 @@ import androidx.room.Insert;
 import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 
+import com.example.mad_project.models.InformationRupp;
 import com.example.mad_project.models.Student;
 
 import java.util.List;
@@ -28,5 +29,9 @@ public interface MyRoomDao {
     void deleteCategoryById(String id);
 
 
+    @Insert
+    void insertNotification(InformationRupp informationRupp);
 
+    @Query("SELECT * FROM informationrupp")
+    List<InformationRupp> getALLNotification();
 }

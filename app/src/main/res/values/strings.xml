@@ -16,9 +16,8 @@
     <string name="password_sign_in">Password</string>
     <string name="button_sign_in">Sign In</string>
 
-<!--    TODO : String For Setting Activity -->
+    <!--    TODO : String For Setting Activity -->
     <string name="name_Setting_Activity"> Name:</string>
-
 
 
 </resources>

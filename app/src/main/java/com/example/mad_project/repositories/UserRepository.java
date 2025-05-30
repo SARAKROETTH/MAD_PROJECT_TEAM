@@ -26,7 +26,6 @@ public class UserRepository {
 
     public UserRepository( Context context){
         this.context = context;
-
         AppDatabase appDatabase = AppDatabase.getInstance(context);
         myRoomDao = appDatabase.userDao();
     }

@@ -6,9 +6,10 @@ import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
 
+import com.example.mad_project.models.InformationRupp;
 import com.example.mad_project.models.Student;
 
-@Database(entities = {Student.class}, version = 1, exportSchema = false)
+@Database(entities = {Student.class, InformationRupp.class}, version = 1, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {
     public abstract MyRoomDao userDao();
 
